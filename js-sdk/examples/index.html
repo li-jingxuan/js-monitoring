@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../dist/js-sdk.js"></script>
+  <script>
+    window.monitoringSDK.register({
+      projectName: 'Index',
+      catchConsoleError: true,
+      catchConsoleWarn: true,
+      catchCrossScriptError: true,
+      customInfo: { customInfo: 'customInfo'}
+    })
+  </script>
+  <script src="https://www.baidu.com/dist/js-sdk.js"></script>
+  <script src="https://yun.dui88.com/tuia/cdn/remote/error_scroll.js"></script>
+</head>
+<body>
+  <button id="testBtn">测试</button>
+  <img src="https://img2.baidu.com/ita/u=3836125852,1390984141&fm=26&fmt=auto" />
+  <script>
+    // document.getElementById('testBtn').onclick=function() {
+    //   // console.warn('custom error msg!!!', false)
+    //   console.error({ code: 300, msg: 'custom error msg!!!' })
+    //   // console.log(a)
+    // }
+  </script>
+  <script src="./test.js" ></script><script src="./test.js" ></script>
+</body>
+</html>
